@@ -1,7 +1,9 @@
+
+
 ---
 
 ```markdown
-# DSList API
+#  DSList API
 
 Projeto backend desenvolvido com **Spring Boot** para listar jogos com suas informações. A aplicação segue boas práticas de arquitetura em camadas, uso de DTOs, injeção de dependência via construtor e exposição de dados via API REST.
 
@@ -86,11 +88,11 @@ GET http://localhost:8080/games
 
 ---
 
-**Desenvolvido por Kdu**  
+**Desenvolvido com  por Kdu**  
 *Campo Grande - MS, Brasil*
 
 ```
 
 ---
 
-
+Pronto pra subir no GitHub! Amanhã a gente continua com Swagger, testes ou front-end. Vai descansar, você merece. Até amanhã, dev! 🛌🔥
