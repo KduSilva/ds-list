@@ -88,11 +88,10 @@ GET http://localhost:8080/games
 
 ---
 
-**Desenvolvido com  por Kdu**  
+**Desenvolvido por Kdu**  
 *Campo Grande - MS, Brasil*
 
 ```
 
 ---
 
-Pronto pra subir no GitHub! Amanhã a gente continua com Swagger, testes ou front-end. Vai descansar, você merece. Até amanhã, dev! 🛌🔥
