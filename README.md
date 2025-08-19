@@ -1,9 +1,7 @@
-Perfeito, Kdu! Com esse retorno do Postman, dá pra mostrar que sua API está funcionando lindamente. Aqui está um **README.md completo e formatado**, pronto pra você postar no GitHub agora mesmo antes de cair no sono. 😴
-
 ---
 
 ```markdown
-# 🎮 DSList API
+# DSList API
 
 Projeto backend desenvolvido com **Spring Boot** para listar jogos com suas informações. A aplicação segue boas práticas de arquitetura em camadas, uso de DTOs, injeção de dependência via construtor e exposição de dados via API REST.
 
