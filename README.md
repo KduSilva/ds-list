@@ -1,7 +1,3 @@
-
-
----
-
 ```markdown
 #  DSList API
 
@@ -85,8 +81,6 @@ GET http://localhost:8080/games
 - Adicionar documentação com Swagger
 - Criar testes unitários com JUnit e Mockito
 - Desenvolver front-end com React para consumir a API
-
----
 
 **Desenvolvido por Kdu**  
 *Campo Grande - MS, Brasil*
