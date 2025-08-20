@@ -6,5 +6,7 @@ import com.eduardo.ds_list.entities.Game;
 public interface GameRepository extends JpaRepository<Game, Long> {
 
     // Métodos de consulta adicionais podem ser definidos aqui, se necessário
+    // métodos que usam gameRepository...
+
 
 }
