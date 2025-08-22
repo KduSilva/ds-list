@@ -7,6 +7,7 @@ import java.util.Optional;
 import com.eduardo.ds_list.dto.GameDTO;
 import com.eduardo.ds_list.dto.GameReturnDTO;
 import com.eduardo.ds_list.entities.Game;
+import com.eduardo.ds_list.projections.GameProjection;
 import com.eduardo.ds_list.repositories.GameRepository;
 
 @Service
@@ -30,6 +31,13 @@ public class GameService {
         List<Game> games = gameRepository.findAll();
         List<GameDTO> gameDTOs = games.stream().map(x -> new GameDTO(x)).toList();
         return gameDTOs;
-        // return gameRepository.findAll().stream().map(GameDTO::new).collect(Collectors.toList());
+        
+    }
+
+    public List<GameDTO> findByList(Long listId) {
+        List<Game> games = gameRepository.findAll();
+        List<GameProjection> gameDTOs = gameRepository.searchByList(listId);
+        return gameDTOs.stream().map(x -> new GameDTO(x)).toList();
+        
     }
 }

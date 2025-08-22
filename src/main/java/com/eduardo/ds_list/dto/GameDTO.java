@@ -1,6 +1,7 @@
 package com.eduardo.ds_list.dto;
 
 import com.eduardo.ds_list.entities.Game;
+import com.eduardo.ds_list.projections.GameProjection;
 
 
 public record GameDTO(
@@ -27,64 +28,25 @@ public record GameDTO(
                 entity.getLongDescription()
             );
         }
+
+       public GameDTO(GameProjection projection) {
+    this(
+        projection.getId(),
+        projection.getTitle(),
+        projection.getYear(),
+        projection.getGenre(),
+        projection.getPlatform(),
+        projection.getScore(),
+        projection.getImgUrl(),
+        projection.getShortDescription(),
+        projection.getLongDescription()
+    );
 }
-// public class GameDTO {
+    }
 
-//     private Long id;
-//     private String title;
-//     private Integer year;
-//     private String genre;
-//     private Double score;
-//     private String imgUrl;
-//     private String shortDescription;
-//     private String longDescription;
+   
 
-//     public GameDTO() {
 
-//     }
 
-//     public GameDTO(Game entity) {
-//         this.id = entity.getId();
-//         this.title = entity.getTitle();
-//         this.year = entity.getYear();
-//         this.genre = entity.getGenre();
-//         this.score = entity.getScore();
-//         this.imgUrl = entity.getImgUrl();
-//         this.shortDescription = entity.getShortDescription();
-//         this.longDescription = entity.getLongDescription();
 
-//     }
 
-//     public Long getId() {
-//         return id;
-//     }
-
-//     public String getTitle() {
-//         return title;
-//     }
-
-//     public Integer getYear() {
-//         return year;
-//     }
-
-//     public String getGenre() {
-//         return genre;
-//     }
-
-//     public Double getScore() {
-//         return score;
-//     }
-
-//     public String getImgUrl() {
-//         return imgUrl;
-//     }
-
-//     public String getShortDescription() {
-//         return shortDescription;
-//     }
-
-//     public String getLongDescription() {
-//         return longDescription;
-//     }
-
-// }
